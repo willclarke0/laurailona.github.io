@@ -380,6 +380,7 @@ h3 {
 
   .portfolio-content img {
     width: 20vw;
+    margin: 0 0 0 1rem;
   }
 
   .portfolio-image {
