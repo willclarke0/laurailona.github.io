@@ -13,13 +13,20 @@
     <header id="top">
       <div class="navigation-container">
         <div class="logo"><a href="#top">laurailona.io</a></div>
-        <nav class="top-nav">
+				<div class="top-nav-container">
+				<button class="menu-container" id="show-menu-button">
+  				<span class="menu-icon"></span>
+  				<span class="menu-icon"></span>
+  				<span class="menu-icon"></span>
+				</button>
+        <nav class="top-nav" id="top-nav">
           <ul>
             <li><a href="#about">about</a></li>
             <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#hire-me">work with me</a></li>
           </ul>
       </nav>
+		</div>
     </div>
     <div class="header">
       <div class="header-name">
@@ -88,30 +95,33 @@
       <section class="portfolio" id="portfolio">
 				<div class="portfolio-content">
 					<div class="portfolio-content-container">
-          <h3><span class="white-highlight">Landing Pages</span></h3>
+          <h3>Landing Pages</h3>
           <div class="portfolio-section">
 						<div class="portfolio-image"><img src="images/makeawish-small.png" alt="placeholder"></div>
 						<div class="portfolio-text">
 							<h4><span class="white-highlight">Make A Wish - Simple landing page template</span></h4>
-							<p><span class="white-highlight">This simple wordpress theme was designed for a client project. It is fully responsive and made with SEO in mind. It would be ideal for a blog or a small business website.</span></p></div>
+							<p><span class="white-highlight">A simple landing page template, made with JavaScript, CSS and HTML.</span></p>
+							<p class="portfolio-links"><a href="#" target="_blank"><span class="white-highlight">Live demo</span></a> <span class="white-highlight"> Code on Github</span></p></div>
 					</div>
 				</div>
 				<div class="portfolio-content-container">
-          <h3><span class="white-highlight">Personal Projects</span></h3>
+          <h3>Personal Projects</h3>
           <div class="portfolio-section">
 						<div class="portfolio-image"><img src="images/calculator-small.png" alt="placeholder"></div>
 						<div class="portfolio-text">
 							<h4><span class="white-highlight">CalculateIt - JavaScript Calculator</span></h4>
-							<p><span class="white-highlight">This simple wordpress theme was designed for a client project. It is fully responsive and made with SEO in mind. It would be ideal for a blog or a small business website.</span></p></div>
+							<p><span class="white-highlight">A calculator made entirely with HTML, CSS and Vanilla JavaScript</span></p>
+							<p class="portfolio-links"><a href="http://laurailona.github.io/calculator" target="_blank"><span class="white-highlight">Live demo</span></a> <a href="https://github.com/laurailona/calculator" target="_blank"><span class="white-highlight"> Code on Github</span></a></p></div>
 					</div>
         </div>
 				<div class="portfolio-content-container">
-          <h3><span class="white-highlight">Scripts and Helper Functions</span></h3>
+          <h3>Scripts and Helper Functions</h3>
           <div class="portfolio-section">
 						<div class="portfolio-image"><img src="images/typewriter.gif" alt="placeholder"></div>
 						<div class="portfolio-text">
 							<h4><span class="white-highlight">typewriterEffect() - JavaScript</span></h4>
-							<p><span class="white-highlight">This simple wordpress theme was designed for a client project. It is fully responsive and made with SEO in mind. It would be ideal for a blog or a small business website.</span></p></div>
+							<p><span class="white-highlight">A little script to add a "Typewriter Effect" to pages. It lets you choose an array of strings to type, whether you'd like to loop indefininetly and which DOM element to type in. </span></p>
+						<p class="portfolio-links"><a href="#" target="_blank"><span class="white-highlight">Live demo</span></a> <span class="white-highlight"> Code on Github</span></p></div>
 					</div>
         </div>
 			</div>
@@ -124,13 +134,13 @@
       </section>
       <section class="hire-me" id="hire-me">
 				<h2>WORK WITH ME</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras turpis ipsum, ullamcorper vitae ornare quis. Donec blandit enim ut risus semper aliquet. Aliquam ac dui in erat aliquet rutrum vitae eu justo. Sed consequat posuere gravida. Nulla pharetra tempor nunc vel laoreet. Sed quis accumsan felis. Curabitur sit amet mollis tellus. Morbi pharetra gravida leo, eget imperdiet lacus pulvinar finibus. Sed non pellentesque quam. Maecenas viverra et augue sed luctus. Ut pharetra ante ut tortor mattis sodales.</p>
+				<p>Until this portfolio is hosted somewhere outside of Github, the contact form doesn't work unfortunately. But hey, you can email me at <a href="mailto:clarkelaura92@gmail.com">clarkelaura92@gmail.com</a>.</p>
 				<div class="form-container">
-					<form class="contact-form">
+					<form class="contact-form" action="#" method="POST">
 						<div class="contact-form-left">
-							<input type="text" placeholder="Name">
-							<input type="text" placeholder="Email">
-							<button type="submit" name="Submit">SUBMIT</button>
+							<input type="text" placeholder="Name" name="name">
+							<input type="text" placeholder="Email" name="email">
+							<button type="submit" name="Submit" value="submit">SUBMIT</button>
 						</div>
 						<div class="contact-form-right">
 							<textarea placeholder="Your message"></textarea>

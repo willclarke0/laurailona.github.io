@@ -14,7 +14,7 @@ header {
   position: relative;
 }
 
-header a, header a:visited {
+a, a:visited {
   color: black;
   text-decoration: none;
 }
@@ -47,8 +47,14 @@ header a, header a:visited {
 }
 
 .top-nav li {
-  display: inline;
+  display: block;
   margin-left: 5%;
+}
+
+@media only screen and (min-width: 800px) {
+  .top-nav li {
+    display: inline;
+  }
 }
 
 .header {
@@ -147,6 +153,47 @@ header a, header a:visited {
   z-index: 1;
   transition: 1s;
 }
+
+/* Hamburger Menu, Show-Hide */
+
+.top-nav-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@media only screen and (min-width: 800px) {
+  .top-nav-container {
+  align-items: stretch;
+  }
+}
+
+.menu-container {
+  border: none;
+  background-color: transparent;
+  width: 50px;
+}
+
+.menu-icon {
+  width: 30px;
+  background-color: #000;
+  height: 5px;
+  display: block;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+.menu-visible {
+  display: block;
+}
+
+@media only screen and (min-width: 800px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 
 /* Speech Bubble */
 
@@ -362,6 +409,10 @@ h3 {
   color: black;
   margin: 0 auto 1rem auto;
   display: none;
+}
+
+.portfolio-links {
+  text-align: center;
 }
 
 @media only screen and (min-width: 800px) {
