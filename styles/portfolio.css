@@ -1,0 +1,20 @@
+.full-portfolio-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  min-width: 250px;
+  max-width: 20%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 80%;
+}
+
+.full-portfolio-section .portfolio-item h3 {
+  padding-left: 0;
+}
