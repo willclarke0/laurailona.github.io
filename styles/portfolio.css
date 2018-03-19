@@ -4,6 +4,10 @@
   flex-wrap: wrap;
 }
 
+h1 {
+  text-align: center;
+}
+
 .portfolio-item {
   min-width: 250px;
   max-width: 20%;
@@ -13,8 +17,26 @@
 
 .portfolio-item img {
   width: 80%;
+  border: 5px solid black;
 }
 
 .full-portfolio-section .portfolio-item h3 {
   padding-left: 0;
+}
+
+.pink-highlighted {
+  background-color: #FF4F90;
+}
+
+.yellow-highlighted {
+  background-color: #FFEE00;
+}
+
+.blue-highlighted {
+  background-color: #66B2FF;
+}
+
+footer {
+  border: none;
+  border-top: 5px solid black;
 }
