@@ -458,6 +458,22 @@ h3 {
     border-bottom: 0;
   }
 }
+
+.mobile-portfolio-button {
+  border-top: 5px solid black;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: #66B2FF;
+  padding: 1rem 0 1rem 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile-portfolio-button {
+    display: none;
+  }
+}
+
 /* Hire me section */
 
 .hire-me {
