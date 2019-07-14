@@ -1,1 +1,8 @@
 /* NEW Flexbox navbar */
+.flex-menu-container {
+	display: flex;
+}
+
+.menu-item {
+	display: block;
+}
