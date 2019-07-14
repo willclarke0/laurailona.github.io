@@ -96,62 +96,16 @@ a, a:visited {
 
 .web-dev {
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  display: inline;
 }
 
-@media only screen and (min-width: 800px) {
-  .web-dev {
-    width: 22vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .web-dev span {
-    display: flex;
-  }
-}
-
-.intro-text-1, .intro-text-2, .intro-text-3 {
-  line-height: 1;
-  font-size: 6vw;
-}
-
-@media only screen and (min-width: 800px) {
-  .intro-text-1 {
-    font-size: 2.9vw;
-  }
-
-  .intro-text-2 {
-    font-size: 8vw;
-  }
-
-  .intro-text-3 {
-    font-size: 2.6vw;
-  }
-}
-
-.profile-picture {
-  display: none;
-  width: 8vw;
-}
-
-@media only screen and (min-width: 800px) {
-  .profile-picture {
-    display: block;
-  }
-}
-
-.profile-picture img {
-  position: absolute;
-  bottom: -15vw;
-  right: 0;
-  padding: 0;
-  width: 15vw;
-  z-index: 1;
-  transition: 1s;
+.web-dev h2 {
+  margin: 0;
+  paddin: 0;
 }
 
 /* Hamburger Menu, Show-Hide */
