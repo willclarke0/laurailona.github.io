@@ -1,0 +1,287 @@
+/*
+Theme Name: pharmametrics
+Author: Rixner
+Author URI: http://rixner.net/
+
+.
+*/
+/* Global */
+@charset "utf-8";
+* {
+	padding:0; margin:0;
+}
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-webfont.woff') format('woff'),
+         url('fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('fonts/DroidSans-Bold-webfont.eot');
+    src: url('fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'DroidSansRegular';
+	font-size:20px;
+}
+
+a{ outline:none;color:#7B7C7E; text-decoration:none;}
+a:hover{color:#000; text-decoration:none}
+ul{padding:0px;margin:0px; }
+
+p{margin:0; line-height:31px;}
+span{margin:0; line-height:31px;}
+img {border:none;margin:0; width:100%}
+
+input:focus {
+  outline: none;
+}
+
+h1{ width:100%; text-align:center; margin-top:20px; margin-bottom:35px; font-size:50px;  font-family: 'DroidSansBold'; font-weight:normal; line-height:60px;}
+h2{ width:100%; text-align:center; margin-top:0px; margin-bottom:1%;font-size:36px;  font-family: 'DroidSansBold'; font-weight:normal;line-height:55px;}
+h3{ width:100%; text-align:center; margin-top:20px; margin-bottom:20px;font-size:28px;  font-family: 'DroidSansBold'; font-weight:normal; line-height:33px;}
+h2.normal{ font-size:36px; }
+
+/*update*/
+h1{  font-size:40px; line-height:48px; margin-bottom:10px; margin-top:0}
+h2{  font-size:25px; line-height:30px;}
+h3{  font-size:20px; line-height:24px;}
+h2.normal{ font-size:20px; }
+
+#line{font-size:25px;width:100%; text-align:center;font-family: 'DroidSansBold'; font-weight:normal;line-height:1px; margin-top:25px; margin-bottom:20px}
+
+/* Navigation */
+#menu {position:fixed;width:100%;  z-index:9999; background:#fff; height:150px; }
+#header{ max-width:960px; margin:auto;  margin-top:0px; width:100%; display:table;}
+#header img{ width:auto}
+
+
+#meta{ float:right;width:60%; height:26px;  }
+#meta input,#meta button{ float:left; margin-top:5px; border:1px solid #666; margin-right:15px; }
+.highlighted {background-color:yellow;}
+#flags_language_selector{ color:#7B7C7E;font-family: 'DroidSansRegular';  text-decoration:none; float:right; margin-top:10px;font-size:14px;}
+#flags_language_selector a{ color:#000;margin-left:0px;  text-decoration:none; line-height:20px }
+#flags_language_selector a:hover{color:#7B7C7E;}
+#flags_language_selector img{ width:auto; margin-right:10px;	}
+
+#searchopen{cursor:pointer}
+
+
+#searchbar{ display:none;width:210px; height:18px; margin-top:0px;   float:left; }
+input#search{ width:170px;float:left; margin-top:0; height:16px; margin-right:0; }
+#next{ border:none; float:left; height:20px; width:20px; margin-top:0px; cursor:pointer; margin-left:5px; margin-right:0;background:url(images/next.png) no-repeat}
+#next:hover{background:url(images/next_hover.png) no-repeat;height:20px; width:20px;}
+
+
+
+#logo{ float:left; margin-top:24px; width:280px;}
+#logo img{ width:280px;}
+#logo480{ display:none;}
+#logo480 img{ width:260px;}
+#logo320{ display:none;}
+#logo320 img{ width:200px;}
+
+
+.menu{list-style: none;margin: 0;padding:0; float:right; width:680px; margin-right:0; margin-top:44px;}
+.menu li a{display: block;float: right;margin-left:15px;color:#000; font-family: 'DroidSansRegular'; font-size:16px; text-decoration:none;}
+.menu li a:hover{color:#7B7C7E}
+.menu li a.active{;color:#7B7C7E}
+nav a#pull {display: none; text-transform:none}
+
+
+.headerimagetablet,.headerimageiphone{ display:none}
+
+
+
+#about-us,#das-unternehmen {
+ background:url(images/about-us.jpg) no-repeat ;
+ margin: 0;
+ padding: 0;
+width:100%;
+background-size: cover;
+height:637px;
+}
+#about-us-1,#das-unternehmen-1{
+background:#FFF;
+margin: auto;
+ padding: 0;
+width:100%;
+padding-bottom:35px;
+padding-top:30px;
+}
+
+
+#products-and-services,#produkte-und-leistungen {
+ background:url(images/products-and-services.jpg) no-repeat ;
+ margin: 0;
+ padding: 0;
+width:100%;
+background-size: cover;
+height:390px;
+}
+#products-and-services-1,#produkte-und-leistungen-1 {
+background:#FFF;
+margin: auto;
+ padding: 0;
+width:100%;
+padding-bottom:35px;
+padding-top:30px;
+}
+
+
+#references,#referenzen {
+ background:url(images/references.jpg) no-repeat;
+ margin: 0;
+ padding: 0;
+width:100%;
+background-size: cover;
+height:390px;
+}
+#references-1,#referenzen-1 {
+background:#FFF;
+margin: auto;
+ padding: 0;
+width:100%;
+padding-bottom:35px;
+padding-top:30px;
+}
+
+
+#contact-us,#kontakt {
+ background:url(images/contact-us.jpg) no-repeat;
+ margin: 0;
+ padding: 0;
+width:100%;
+background-size: cover;
+height:390px;
+}
+#contact-us-1,#kontakt-1 {
+background:#FFF;
+margin: auto;
+ padding: 0;
+width:100%;
+padding-bottom:35px;
+padding-top:30px;
+
+}
+
+
+#business-lounge,#die-business-lounge {
+ background:url(images/business-lounge.jpg) no-repeat;
+ margin: 0;
+ padding: 0;
+width:100%;
+background-size: cover;
+height:390px;
+}
+#business-lounge-1,#die-business-lounge-1 {
+background:#FFF;
+margin: auto;
+ padding: 0;
+width:100%;
+padding-bottom:35px;
+padding-top:30px;
+}
+
+
+#imprint,#impressum {
+ background:url(images/imprint.jpg) no-repeat;
+ margin: 0;
+ padding: 0;
+width:100%;
+background-size: cover;
+height:390px;
+}
+#imprint-1,#impressum-1 {
+background:#FFF;
+margin: auto;
+ padding: 0;
+width:100%;
+padding-bottom:35px;
+padding-top:30px;
+}
+
+
+
+.grid_1 ul{ width:60%; margin-left:26%; margin-top:2%; margin-bottom:2% }
+.grid_1 ul li{ list-style:outside;  padding-left:15px;line-height:43px; margin-bottom:12px;}
+
+/*update*/
+.grid_1 ul li{font-size:20px;line-height:31px; margin-bottom:8px;}
+
+input, textarea {
+/*  -webkit-appearance: none;
+  -webkit-border-radius: 0;*/
+}
+
+#contactform{ margin-left:30%; width:40%;font-size:14px; }
+#contactform input[type="text"]{ border:1px solid #666; height:24px; width:100%; margin-top:15px; padding:5px;}
+#contactform input[type="email"]{ border:1px solid #666; height:24px; width:100%; margin-top:15px; padding:5px;}
+#contactform input:onfocus{ background:#FFF}
+#contactform textarea{ border:1px solid #666; width:100%; height80px; margin-top:15px; padding:5px;}
+#contactform input[type="submit"]{ background:#666; color:#FFF; border:none; width:70px; line-height:12px; cursor:pointer; float:left; margin-right:15px; height:25px; margin-top:15px;}
+#bbb{ float:left; line-height:55px; margin-left:5px;}
+
+input[type="checkbox"]{
+ padding:0; margin:0; margin-left:5px;  margin-top:20px;
+}
+
+#contactform label{ float:left}
+
+.screen-reader-response{ display:none}
+.wpcf7-validation-errors{ text-align:center; color:#C03; margin-top:10px;}
+.wpcf7-not-valid-tip{ color:#C03; font-size:20px; margin-top:10px; display:block}
+.wpcf7-mail-sent-ok{ text-align:center; color:#693}
+
+/**/
+			.highlight { background : #ffc71b; }
+			.red{ background:#F66}
+			.green{ background: #690}
+
+.test{  margin-top:2%; margin-bottom:2%}
+.test h3{ margin-top:0}
+.test ul{ width:70%; margin-left:20%;max-width:600px;  }
+.test ul li{ list-style:outside;  padding-left:15px;line-height:43px; margin-bottom:12px;}
+
+
+/*update*/
+.test ul li{font-size:20px;line-height:31px; margin-bottom:8px;}
+
+
+#disclaimer p{ font-size:14px; line-height:21px;}
+#disclaimer h3{ font-size:14px; line-height:21px; margin-bottom:10px; margin-top:15px;}
+#disclaimer h2{ font-size:18px; line-height:22px;margin-bottom:10px; margin-top:15px;}
+
+.none{ clear:both}
+
+/* NEW FLEXBOX MENU */
