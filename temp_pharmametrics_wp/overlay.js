@@ -1,7 +1,7 @@
 /* Overlay Button (Disclaimer) */
 
-var disclaimerOverlay = document.querySelector(#disclaimer);
-var hideOverlayButton = document.querySelector(#close-disclaimer);
+var disclaimerOverlay = document.querySelector('#disclaimer');
+var hideOverlayButton = document.querySelector('#close-disclaimer');
 
 
 function hideDisclaimer() {
