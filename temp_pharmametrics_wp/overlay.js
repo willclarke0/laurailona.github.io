@@ -3,6 +3,7 @@
 var disclaimerOverlay = document.querySelector('#disclaimer');
 var hideOverlayButton = document.querySelector('#close-disclaimer');
 var showDisclaimerButton = document.querySelector('#show-disclaimer');
+var cookieButton = document.querySelector('#cn-more-info');
 var body = document.querySelector('body');
 
 
@@ -20,3 +21,4 @@ function showDisclaimer() {
 
 hideOverlayButton.addEventListener("click", hideDisclaimer);
 showOverlayButton.addEventListener("click", showDisclaimer);
+cookieButton.addEventListener("click", showDisclaimer);

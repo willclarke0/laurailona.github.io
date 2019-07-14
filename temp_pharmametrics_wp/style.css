@@ -12,10 +12,11 @@
 }
 
 body {
-	overflow: hidden;
+	overflow: auto;
 }
 
 #close-disclaimer {
+	display: none;
 	text-align: center;
 	font-weight:700;
 	color: white;
@@ -31,6 +32,7 @@ body {
 	z-index: 9999999;
 }
 #disclaimer {
+	display: none;
 	position:fixed;
 	width: 90%;
 	height: 90%;
