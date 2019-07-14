@@ -20,5 +20,10 @@ function showDisclaimer() {
 }
 
 hideOverlayButton.addEventListener("click", hideDisclaimer);
-showDisclaimerButton.addEventListener("click", showDisclaimer);
-cookieButton.addEventListener("click", showDisclaimer);
+// showDisclaimerButton.addEventListener("click", showDisclaimer);
+cookieButton.addEventListener("click", function(event){
+  event.preventDefault()
+  disclaimerOverlay.setAttribute("style", "display:block");
+  hideOverlayButton.setAttribute("style", "display:block");
+  body.setAttribute("style", "overflow:hidden");
+});
