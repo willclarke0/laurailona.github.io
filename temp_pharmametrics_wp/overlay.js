@@ -20,5 +20,5 @@ function showDisclaimer() {
 }
 
 hideOverlayButton.addEventListener("click", hideDisclaimer);
-showOverlayButton.addEventListener("click", showDisclaimer);
+showDisclaimerButton.addEventListener("click", showDisclaimer);
 cookieButton.addEventListener("click", showDisclaimer);
