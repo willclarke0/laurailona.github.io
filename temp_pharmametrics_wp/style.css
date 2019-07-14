@@ -1,12 +1,12 @@
 /* NEW Flexbox navbar */
-.flex-menu-container {
-	display: flex;
-}
 
-.menu {
-	display: flex;
-}
+@media screen and (min-width: 1019px) {
+	.menu-item {
+		display: block;
+	}
 
-.menu-item {
-	display: block;
+	.menu {
+		display: flex;
+		justify-content: flex-end;
+	}
 }
