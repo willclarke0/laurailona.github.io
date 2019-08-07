@@ -42,98 +42,7 @@ var dataSet = {id: "All patients (Incidence)", children: [
       {id: "Treatment: R-Chop/ R-Bendamustine"}
     ]}
   ]},
-  {id: "5", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"7", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "6", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"9", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "7", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"11", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "8", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"13", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "9", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"15", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "10", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"ECOG > 2", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "11", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-CHOP/ R-Bendamustine"}
-    ]},
-    {id: "ECOG > 2", children: [
-      {id: "Treatment: Bendamustine, Rhuximab, Chlorambucil"}
-    ]},
-    {id: "ECOG > 2", children: [
-      {id: "<3"}
-    ]}
-  ]},
-  {id: "12", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"ECOG > 2", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "13", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"ECOG > 2", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "14", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"4", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "15", children: [
-    {id: "ECOG 0-2", children: [
-      {id: "Treatment: R-Chop/ RDHAP"}
-    ]},
-    {id:"4", children: [
-      {id: "Treatment: R-Chop/ R-Bendamustine"}
-    ]}
-  ]},
-  {id: "16-50", children: [
+  {id: "5-50", children: [
     {id: "ECOG 0-2", children: [
       {id: "Treatment: R-Chop/ RDHAP"}
     ]},
@@ -348,7 +257,7 @@ function animateBalls() {
 
   /* Set percentages (later from data), calculate offset positions for balls */
   var rows = 4;
-  var percentages = [12,2,1,4,1,5,5,10,10,10,8,5,1,5,1,7,10,6,2,3,4,9,19,20,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]; // This will later come from data
+  var percentages = [12,12,10,14,1,10,5,10,10,10,8,5,1,5,1,7,10,6,2,3,4,9,19,20,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]; // This will later come from data
 
   var offset = [];
 
