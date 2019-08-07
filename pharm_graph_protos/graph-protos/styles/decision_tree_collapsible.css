@@ -1,0 +1,86 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+
+
+svg {
+  width: 90vw;
+  height: 90vh;
+}
+
+text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.node-label {
+  fill: #f0f8ff;
+  stroke: #332e49;
+  stroke-width: 3px;
+  transition: 0.5s;
+}
+
+.node-label:hover {
+  fill: #c4f3e7;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+.path {
+  stroke: rgba(0,0,0,0);
+  stroke-width: 4px;
+  fill: none;
+}
+
+/* TODO needs to be done dynamically */
+
+.path-0:hover {
+  stroke: #f7e08b;
+  transition: 0.6s;
+}
+
+.path-1:hover {
+  stroke: #71ded3;
+  transition: 0.6s;
+}
+
+.path-2:hover {
+  stroke: #b1d7f1;
+  transition: 0.6s;
+}
+
+.path-3:hover {
+  stroke: #ffc0cb;
+  transition: 0.6s;
+}
+
+.path-4:hover {
+  stroke: #d4d8d9;
+  transition: 0.6s;
+}
+
+svg circle {
+  transition: r 0.3s;
+}
+svg circle:hover {
+  r: 12;
+  transition: r 0.3s;
+}
+
+circle.node {
+  stroke: #332e49;
+  stroke-width: 3px;
+}
